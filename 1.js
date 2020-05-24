@@ -20,7 +20,6 @@ Object.defineProperty(person, "salary", {
         let dif_day =  dif.getDate();
         return (dif_day > 20) ? "good salary" : "bad salary"
     },
-    enumerable : true
 })
 
 person.salary; // good salary
