@@ -24,11 +24,11 @@ Object.defineProperties(person, {
     salary: {
         get: function () {
             let date_now = new Date();
-            return (this.rate > 0) ? this.rate * date_now.getDate() : 0;
+            return (this.rate !== null) ? this.rate * date_now.getDate() : 0;
         }
     },
     rate: {
-        value: 0,
+        value: null,
         writable: true
     }
 })
